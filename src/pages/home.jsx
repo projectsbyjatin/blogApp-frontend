@@ -12,7 +12,7 @@ const HomePage = function () {
 
     async function fetchRecentBlogs(){
       try{
-        const response= await axios.get("http://localhost:8080/api/v1/blogs");
+        const response= await axios.get("https://blogapp-backend-1-hdxd.onrender.com/");
         
         setRecentBlogs(response.data.slice(1,3));
       } catch (error) {

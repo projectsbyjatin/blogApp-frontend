@@ -23,7 +23,7 @@ const AddBlog = function () {
     };
     console.log(newBlog);
     try{setIsLoading(true);
-      await axios.post("http://localhost:8080/api/v1/blogs",newBlog);
+      await axios.post("https://blogapp-backend-1-hdxd.onrender.com/",newBlog);
       navigate("/blogs");
       toast("new BLOG added")
     }

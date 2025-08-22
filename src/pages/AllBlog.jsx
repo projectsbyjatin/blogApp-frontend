@@ -14,7 +14,7 @@ const AllBlogs = function () {
 
     async function fetchRecentBlogs(){
       try{
-        const response= await axios.get("http://localhost:8080/api/v1/blogs");
+        const response= await axios.get("https://blogapp-backend-1-hdxd.onrender.com/");
         setRecentBlogs(response.data);
       } catch (error) {
         toast.error("failed to fetch blogs!!!");

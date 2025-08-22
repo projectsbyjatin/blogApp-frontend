@@ -31,7 +31,7 @@ const SingleBlog = () => {
 
   async function deleteBlog(id) {
     try{
-       const response = await axios.delete( `http://localhost:8080/api/v1/blogs/${id}`);
+       const response = await axios.delete( `https://blogapp-backend-1-hdxd.onrender.com//${id}`);
        toast("Blog Deleted Successfully")
        navigate('/blogs')
     
